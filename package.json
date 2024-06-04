@@ -1,0 +1,59 @@
+{
+  "name": "@kaspa/core-lib",
+  "version": "1.6.5",
+  "main": "index.js",
+  "authors": [
+    {
+      "name": "BitPay",
+      "email": "dev@bitpay.com"
+    },
+    {
+      "name": "ASPECTRON Inc",
+      "email": "info@aspectron.com"
+    }
+  ],
+  "browser": {
+    "request": "browser-request"
+  },
+  "dependencies": {
+    "@noble/hashes": "^1.4.0",
+    "blake2b-wasm": "^2.4.0",
+    "bn.js": "=4.11.8",
+    "bs58": "^4.0.1",
+    "buffer-compare": "=1.1.1",
+    "elliptic": "^6.5.3",
+    "inherits": "=2.0.1",
+    "lodash": "^4.17.20",
+    "secp256k1-wasm": ">=2.0.0",
+    "url": "*"
+  },
+  "description": "JavaScript Kaspa library.",
+  "___devDependencies": {
+    "base-x": "=3.0.4",
+    "bitcore-build": "^8.23.1",
+    "brfs": "^2.0.1",
+    "chai": "^4.2.0",
+    "gulp": "^4.0.0",
+    "sinon": "^7.1.1"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aspectron/kaspacore-lib"
+  },
+  "scripts": {
+    "xbuild": "gulp",
+    "xcoverage": "gulp coverage",
+    "xpub": "npm run build && npm publish",
+    "xtest": "gulp test",
+    "xtest:ci": "npm run test"
+  },
+  "files": [
+    "lib",
+    "index.d.ts",
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ]
+}
